@@ -23,8 +23,7 @@ Com estas informações em mente, implementamos de forma simplificada o consumo 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Incorpora o jQuery plugin ao site -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>            
-            
+        <script>
           function getPokemon(valor){
             // Envia um HTTP Request, por meio de uma GET call (assíncrona) para um endpoint definido
             // Aguarda como dados vindos do response um JSON document
@@ -43,8 +42,7 @@ Com estas informações em mente, implementamos de forma simplificada o consumo 
               // imprime o HTTP error number
               console.log("Erro HTTP: " + jqXHR.status);
             });                     
-          }
-            
+          } 
         </script>
       </head>
       <body>
