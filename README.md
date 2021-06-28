@@ -2,7 +2,7 @@
 
 Olá, aluno(a),
 
-Nesta atividade veremos parte do contexto de SOA na prática! Isto mesmo, consumiremos um Web service REST, por meio de uma RESTful API! Você verá, o quão simples, pode ser isso. Vamos lá!
+Nesta atividade veremos parte do contexto de **SOA** na prática! Isto mesmo, consumiremos um **Web service REST**, por meio de uma **RESTful API**! Você verá, o quão simples, pode ser isso. Vamos lá!
 
 Para quem é fã da franquia seja dos games, ou mesmo da animação, gostará muito desta atividade. Estamos falando de Pokémon, uma das franquias mais conhecidas da Nintendo. Pois bem, utilizaremos nessa atividade a [**PokéAPI v2**](https://pokeapi.co/). Ela é uma API pública e muito simples de trabalhar.
 
