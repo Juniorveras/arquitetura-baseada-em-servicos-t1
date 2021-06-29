@@ -13,7 +13,7 @@ Antes de iniciarmos, é importante que você entenda como funciona a REST API, e
 
 Nesta API temos o nosso **endpoint** (endereço de request), que é: **`https://pokeapi.co/api/v2/{query}`** e também nossa **query**, que nada mais é, que nosso **critério** de busca. Trabalharemos nesse exemplo com a busca de um pokémon por nome ou id. Para isso, utilizamos a sintaxe: **pokemon/{id|name}**. Para maiores detalhes, consulte a documentação [**aqui**](https://pokeapi.co/docs/v2).
 
-Com estas informações em mente, implementamos de forma simplificada o consumo da REST API, utilizando uma [**jQuery**](https://jquery.com/) lib. Veja o [**código**](https://assets/code.html) comentado abaixo:
+Com estas informações em mente, implementamos de forma simplificada o consumo da REST API, utilizando uma [**jQuery**](https://jquery.com/) lib. Veja o [**código**](arquitetura-baseada-em-servicos-t1/assets/example/index.html) comentado abaixo:
 
     <!DOCTYPE html>
     <html>

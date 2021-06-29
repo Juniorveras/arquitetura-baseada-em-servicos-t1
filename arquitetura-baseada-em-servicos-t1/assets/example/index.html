@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consumindo RESTful API</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Incorpora o jQuery plugin ao site -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>            
+            
+            function getPokemon(valor){
+                // Envia um HTTP Request, por meio de uma GET call (assíncrona) para um endpoint definido
+                // Aguarda como dados vindos do response um JSON document
+                $.ajax({
+                    url: "https://pokeapi.co/api/v2/pokemon/" + valor,
+                    method: "get",
+                    dataType: "json"
+                })
+                // Se o servidor retornar OK
+                .done(function(data){
+                    // imprime os dados do response no console do browser
+                    console.log(data);
+                })
+                // Se o servidor retornar ERRO
+                .fail(function(jqXHR){
+                    // imprime o HTTP error number
+                    console.log("Erro HTTP: " + jqXHR.status);
+                });                     
+            }
+            
+        </script>
+    </head>
+    <body>
+        <!-- Aciona um evento de clique chamando a getPokemon function por meio de um valor de id -->
+        <button type="button" onclick="getPokemon('150')">getPokemonById</button>
+        <!-- Aciona um evento de clique chamando a getPokemon function por meio de um valor de nome -->
+        <button type="button" onclick="getPokemon('bulbasaur')">getPokemonByName</button>        
+    </body>
+</html>
